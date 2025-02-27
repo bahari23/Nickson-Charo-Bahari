@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title><!--Sets the title of the webpage-->
+</head>
+<body>
+
+    <h2 style="text-align: center; color: red;">REGISTRATION FORM</h2><!--registration form heading-->
+    <form action="register.php" method="post">
+        
+        <!--The form sends data to register.php using the POST method-->
+
+        <!--user input field-->
+        <label for="username" style="padding: 50px;">Username:</label>
+        <input type="text" id="username" name="username" required><br><br><!--required to ensure the is not empty-->
+        <label for="password" style="padding: 50px;">Password:</label>
+
+        <!--register button-->
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit" style="border-radius: 10px; background-color: yellowgreen; padding: 10px; align-self: center; ">Register</button><br>
+       
+        <!--reset button to clear input-->
+        <button type="reset" style="background-color: yellow;border-radius: 10px;padding: 10px;margin-top: 5px;">Reset</button>
+    </form>
+</body>
+</html>

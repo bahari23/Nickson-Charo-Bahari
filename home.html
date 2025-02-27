@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> /*stylings*/
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        form{
+            
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            gap: 20px;
+        }
+        form input{
+            padding-left: 20px;
+            font-weight: bold;
+            font-size: 22px;
+            height: 45px;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+        button{
+            height: 38px;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: yellow;
+            width: 55%;
+            align-self: center;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="login.php" method="post"><!--login form-->
+        <input type="text" name="username" placeholder="email">
+        <input type="password" name="password" placeholder="password">
+        <button type="submit">Login</button>
+        <h1 style="text-align: center;">OR</h1>
+        
+        <a href="registration.html" style="text-align: center; font-size: larger;">Create Account</a>   <!--link to registration form--> 
+
+        </form>
+</body>
+</html>
