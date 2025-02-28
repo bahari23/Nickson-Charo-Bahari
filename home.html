@@ -1,50 +1,52 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Register</title><!--Sets the title of the webpage-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> /*stylings*/
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        form{
+            
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            gap: 20px;
+        }
+        form input{
+            padding-left: 20px;
+            font-weight: bold;
+            font-size: 22px;
+            height: 45px;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+        button{
+            height: 38px;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: yellow;
+            width: 55%;
+            align-self: center;
+            border-radius: 15px;
+        }
+    </style>
 </head>
 <body>
-   
-
-    <h2 style="text-align: center; color: red;">REGISTRATION FORM</h2><!--registration form heading-->
-    <form action="register.php" method="post">
+    <form action="login.php" method="post"><!--login form-->
+        <input type="text" name="username" placeholder="username" required>
+        <input type="password" name="password" placeholder="password" required>
+        <button type="submit">Login</button>
+        <h1 style="text-align: center;">OR</h1>
         
-        <!--The form sends data to register.php using the POST method-->
+        <a href="registration.html" style="text-align: center; font-size: larger;">Create Account</a>   <!--link to registration form--> 
 
-        <!--user input field-->
-        <label for="username" style="padding: 50px; "></label>
-        <input type="text" id="username" name="username" style="border-radius: 200px; height: 25px; text-align: center;" required placeholder="username"><br><br><!--required to ensure the is not empty-->
-        <label for="password" style="padding: 50px;"></label>
-
-        <!--register button-->
-        <input type="password" id="password" name="password" style="border-radius: 15px;height: 25px; text-align: center; " placeholder="password" required><br><br>
-        <button type="submit" style="border-radius: 10px; background-color: yellowgreen; padding: 10px; align-self: center;text-align: center; ">Register</button><br>
-       
-        <!--reset button to clear input-->
-        <button type="reset" style="background-color: yellow;border-radius: 10px;padding: 10px;margin-top: 30px; text-align: center;">Reset</button>
-        <style> /*stylings*/
-          
-          form{
-            
-            padding: 100px;
-        }
-        
-            button{
-                height: 38px;
-                font-weight: bold;
-                font-size: 20px;
-                background-color: yellow;
-                width: 30%;
-                align-self: center;
-                border-radius: 15px;
-                display: flex;
-                align-items: center;
-                position: fixed;
-
-    
-                
-            }
-        </style>
-    </form>
+        </form>
 </body>
 </html>
