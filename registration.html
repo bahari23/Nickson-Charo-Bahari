@@ -4,6 +4,7 @@
     <title>Register</title><!--Sets the title of the webpage-->
 </head>
 <body>
+   
 
     <h2 style="text-align: center; color: red;">REGISTRATION FORM</h2><!--registration form heading-->
     <form action="register.php" method="post">
@@ -11,16 +12,39 @@
         <!--The form sends data to register.php using the POST method-->
 
         <!--user input field-->
-        <label for="username" style="padding: 50px;">Username:</label>
-        <input type="text" id="username" name="username" required><br><br><!--required to ensure the is not empty-->
-        <label for="password" style="padding: 50px;">Password:</label>
+        <label for="username" style="padding: 50px; "></label>
+        <input type="text" id="username" name="username" style="border-radius: 200px; height: 25px; text-align: center;" required placeholder="username"><br><br><!--required to ensure the is not empty-->
+        <label for="password" style="padding: 50px;"></label>
 
         <!--register button-->
-        <input type="password" id="password" name="password" required><br><br>
-        <button type="submit" style="border-radius: 10px; background-color: yellowgreen; padding: 10px; align-self: center; ">Register</button><br>
+        <input type="password" id="password" name="password" style="border-radius: 15px;height: 25px; text-align: center; " placeholder="password" required><br><br>
+        <button type="submit" style="border-radius: 10px; background-color: yellowgreen; padding: 10px; align-self: center;text-align: center; ">Register</button><br>
        
         <!--reset button to clear input-->
-        <button type="reset" style="background-color: yellow;border-radius: 10px;padding: 10px;margin-top: 5px;">Reset</button>
+        <button type="reset" style="background-color: yellow;border-radius: 10px;padding: 10px;margin-top: 30px; text-align: center;">Reset</button>
+        <style> /*stylings*/
+          
+          form{
+            
+            padding: 100px;
+        }
+        
+            button{
+                height: 38px;
+                font-weight: bold;
+                font-size: 20px;
+                background-color: yellow;
+                width: 30%;
+                align-self: center;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+                position: fixed;
+
+    
+                
+            }
+        </style>
     </form>
 </body>
 </html>
